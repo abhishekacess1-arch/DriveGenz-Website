@@ -281,25 +281,7 @@
     form.booking{flex:1 1 calc(60% - 12px);}
     .foot-brand{flex:1 1 30%;}.foot-col{flex:1 1 18%;}
   }
-
-  /* FLEET */
-  .fleet-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px;margin-top:38px;}
-  .fcard{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 22px rgba(28,20,16,.06);}
-  .fcard.prem{background:#1C1410;border-color:#3a2a20;}
-  .fimg{aspect-ratio:3/2;background:linear-gradient(180deg,#332019,#1C1410);display:flex;align-items:center;justify-content:center;overflow:hidden;}
-  .fimg img{width:100%;height:100%;object-fit:cover;display:block;}
-  .fimg .sil{width:82%;height:auto;}
-  .fname{padding:14px 16px 16px;display:flex;flex-direction:column;gap:2px;}
-  .fname b{font-size:1.02rem;}
-  .fname span{font-size:.86rem;color:var(--muted);}
-  .fcard.prem .fname b{color:#fff;}
-  .fcard.prem .fname span{color:#C9BCB2;}
-  .ftags{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;}
-  .fcta{text-align:center;margin-top:34px;}
-  .fnote{text-align:center;color:var(--muted);font-size:.9rem;margin-top:14px;}
-  .fcred{max-width:900px;margin:26px auto 0;font-size:.78rem;color:var(--muted);}
-  .fcred summary{cursor:pointer;text-align:center;}
-  .fcred ul{margin:10px 0 0;padding-left:18px;}
+  .ftags .chip{background:#fff;border:1px solid var(--line);color:#1C1410;}
 </style>
 </head>
 <body>
@@ -313,7 +295,7 @@
       <span class="brandtext"><span class="word"><span class="d">Drive</span><span class="g">Genz</span></span><span class="tagline">The Smart Way to Self-Drive Cars</span></span>
     </a>
     <nav class="nav-links" aria-label="Primary">
-      <a href="#how">How it works</a><a href="#fleet">Fleet</a>
+      <a href="#how">How it works</a>
       <a href="#why">Why us</a>
       <a href="#areas">Service areas</a>
     </nav>
@@ -321,7 +303,7 @@
     <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
-    <a href="#how">How it works</a><a href="#fleet">Fleet</a>
+    <a href="#how">How it works</a>
     <a href="#why">Why us</a>
     <a href="#areas">Service areas</a>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSc2FnyZbZAfCgfGWbsxv9mbSxDDmfDwgwkASRCS2aj-MGHRrg/viewform" class="btn btn-primary">Book Self-Drive Car</a>
@@ -435,46 +417,6 @@
   </div>
 </section>
 
-<!-- FLEET -->
-<section id="fleet" class="pad">
-  <div class="wrap center sec-head reveal">
-    <span class="sticker orange">Our fleet</span>
-    <h2 style="margin-top:16px;">Premium cars for every vibe</h2>
-    <p class="lede">Self drive, chauffeur, weddings &amp; events. Pick the car you like and we send a clear, final quote for your trip.</p>
-    <div class="ftags"><span class="chip"><b>Self</b> drive</span><span class="chip"><b>Chauffeur</b> service</span><span class="chip"><b>Weddings</b> &amp; events</span></div>
-  </div>
-  <div class="wrap">
-    <div class="fleet-grid">
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/2022_Maruti_Suzuki_Vitara_Brezza_1.5_ZXi%2B_%28India%29_front_view.png/960px-2022_Maruti_Suzuki_Vitara_Brezza_1.5_ZXi%2B_%28India%29_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Maruti Brezza Diesel" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Maruti Brezza</b><span>Diesel</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/2018_Hyundai_Santro_%28India%2C_front_view%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled" alt="Hyundai Santro Petrol + CNG" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai Santro</b><span>Petrol + CNG</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Hyundai_Venue_QX1_1.6_GLS_Ecotronic_Gray_Pearl_01.jpg/960px-Hyundai_Venue_QX1_1.6_GLS_Ecotronic_Gray_Pearl_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai Venue Sunroof, Petrol" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai Venue</b><span>Sunroof, Petrol</span></div></div>
-<div class="fcard"><div class="fimg"><img src="/img/sonet.jpg" alt="Kia Sonet" loading="lazy" decoding="async"></div><div class="fname"><b>Kia Sonet</b></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/2020_Kia_Seltos_SX_-_Front.jpg/960px-2020_Kia_Seltos_SX_-_Front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Kia Seltos Diesel" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Kia Seltos</b><span>Diesel</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Suzuki_Dzire_2024_ZXI%2B.jpg/960px-Suzuki_Dzire_2024_ZXI%2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Swift Dzire Petrol + CNG" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Swift Dzire</b><span>Petrol + CNG</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png/960px-2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai i20 Petrol" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai i20</b><span>Petrol</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/2021_Suzuki_Swift_GL_PLUS.jpg/960px-2021_Suzuki_Swift_GL_PLUS.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Maruti Swift Petrol + CNG, Black ZXI" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Maruti Swift</b><span>Petrol + CNG, Black ZXI</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png/960px-2021_Hyundai_i20_N_Line_%28BI3%3B_India%29_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai i20 Diesel" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai i20</b><span>Diesel</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2020_Hyundai_Verna_SX%28O%29_1.5_Diesel_front_view_%28India%29.png/960px-2020_Hyundai_Verna_SX%28O%29_1.5_Diesel_front_view_%28India%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai Verna Petrol" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai Verna</b><span>Petrol</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/2020_Hyundai_Verna_SX%28O%29_1.5_Diesel_front_view_%28India%29.png/960px-2020_Hyundai_Verna_SX%28O%29_1.5_Diesel_front_view_%28India%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai Verna Diesel Auto" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai Verna</b><span>Diesel Auto</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/2024_Hyundai_Creta_1.5_MPi_SX%28O%29_%28India%29_front_view.png/960px-2024_Hyundai_Creta_1.5_MPi_SX%28O%29_%28India%29_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Hyundai Creta Diesel" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Hyundai Creta</b><span>Diesel</span></div></div>
-<div class="fcard"><div class="fimg"><img src="/img/virtus.jpg" alt="Volkswagen Virtus GT 1.5 Auto" loading="lazy" decoding="async"></div><div class="fname"><b>Volkswagen Virtus GT</b><span>1.5 Auto</span></div></div>
-<div class="fcard"><div class="fimg"><img src="/img/thar.jpg" alt="Mahindra Thar / Roxx Diesel / Auto" loading="lazy" decoding="async"></div><div class="fname"><b>Mahindra Thar / Roxx</b><span>Diesel / Auto</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Mahindra_Scorpio_S11_.jpg/960px-Mahindra_Scorpio_S11_.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Mahindra Scorpio Classic" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Mahindra Scorpio Classic</b></div></div>
-<div class="fcard"><div class="fimg"><img src="/img/scorpion.jpg" alt="Mahindra Scorpio N Z6 / Z8L" loading="lazy" decoding="async"></div><div class="fname"><b>Mahindra Scorpio N</b><span>Z6 / Z8L</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Toyota_Fortuner_GUN166_Legender_2.8_Q_4x2_Gray_Metallic_01.jpg/960px-Toyota_Fortuner_GUN166_Legender_2.8_Q_4x2_Gray_Metallic_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Toyota Fortuner Legender" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Toyota Fortuner Legender</b></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Audi_A4_B9_sedans_%28FL%29_1X7A2439.jpg/960px-Audi_A4_B9_sedans_%28FL%29_1X7A2439.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Audi A4" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Audi A4</b></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/2021_Mahindra_XUV700_2.2_AX7_%28India%29_front_view.png/960px-2021_Mahindra_XUV700_2.2_AX7_%28India%29_front_view.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Mahindra XUV700 Auto" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Mahindra XUV700</b><span>Auto</span></div></div>
-<div class="fcard"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Mercedes-Benz_C_200_4MATIC_AVANTGARDE_%28W205%29_front.jpg/960px-Mercedes-Benz_C_200_4MATIC_AVANTGARDE_%28W205%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Mercedes C200" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Mercedes C200</b></div></div>
-<div class="fcard prem"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/23_BMW_M440i_Convertible_Base.jpg/960px-23_BMW_M440i_Convertible_Base.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="BMW M440i Convertible" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>BMW M440i</b><span>Convertible</span></div></div>
-<div class="fcard prem"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/2023_Range_Rover_Sport_SV_Edition_One_Carbon_Bronze.jpg/960px-2023_Range_Rover_Sport_SV_Edition_One_Carbon_Bronze.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Range Rover Sport" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Range Rover Sport</b></div></div>
-<div class="fcard prem"><div class="fimg"><img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Land_Rover_DEFENDER_110_S_ADVENTURE_PACK_%28L663%29_front.jpg/960px-Land_Rover_DEFENDER_110_S_ADVENTURE_PACK_%28L663%29_front.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Land Rover Defender V8" loading="lazy" decoding="async" referrerpolicy="no-referrer"></div><div class="fname"><b>Land Rover Defender V8</b></div></div>
-    </div>
-    <p class="fnote">Defender and convertible cars available on demand for marriage decoration. Cars are well maintained, sanitized and insured. Special discounts on multi-day bookings.</p>
-    <div class="fcta"><a href="#contact" class="btn btn-primary">Request a quote</a></div>
-    <details class="fcred"><summary>Photo credits</summary><p>Car photos are from Wikimedia Commons under CC BY or CC BY-SA licenses. Some photos were cropped or had number plates masked. Cars shown are representative of the model.</p><ul></ul></details>
-  </div>
-</section>
-
 <!-- AREAS -->
 <section id="areas" class="areas pad">
   <div class="wrap center sec-head reveal">
@@ -542,7 +484,7 @@
       </div>
       <div class="foot-col">
         <h4>Company</h4>
-        <a href="#how">How it works</a><a href="#fleet">Fleet</a>
+        <a href="#how">How it works</a>
         <a href="#why">Why <span class="bz light">Drive<span class="g">Genz</span></span></a>
         <a href="#areas">Service areas</a>
       </div>
